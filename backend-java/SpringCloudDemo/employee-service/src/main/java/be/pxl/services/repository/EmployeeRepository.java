@@ -4,6 +4,12 @@ import be.pxl.services.domain.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Optional;
+
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+    Optional<List<Employee>> findEmployeesByDepartmentId(long id);
+    Optional<Employee> findEmployeeByOrganizationId(long id);
+    Optional<List<Employee>> findEmployeesByOrganizationId(long id);
 }

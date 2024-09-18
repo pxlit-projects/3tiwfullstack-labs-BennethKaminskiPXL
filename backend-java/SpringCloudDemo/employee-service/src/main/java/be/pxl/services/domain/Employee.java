@@ -16,6 +16,7 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     private long organizationId; //geen relaties omdat microservices zijn
     private long departmentId;
     private String name;
