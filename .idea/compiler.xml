@@ -10,6 +10,7 @@
         <module name="Notification-service" />
         <module name="Organization-service" />
         <module name="department-service" />
+        <module name="discovery-service" />
         <module name="employee-service" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="Notification-service" options="-parameters" />
       <module name="Organization-service" options="-parameters" />
       <module name="department-service" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
       <module name="employee-service" options="-parameters" />
     </option>
   </component>
