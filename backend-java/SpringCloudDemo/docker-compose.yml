@@ -34,17 +34,6 @@ services:
     networks:
       - springboot-microservices-network
 
-  mysql-notification-service:
-    image: mysql:8.0
-    container_name: mysql_notification
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: notificationservice_db
-    ports:
-      - "3310:3306"
-    networks:
-      - springboot-microservices-network
-
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
