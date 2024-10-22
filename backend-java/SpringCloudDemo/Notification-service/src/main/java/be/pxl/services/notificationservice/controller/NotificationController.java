@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.*;
 public class NotificationController {
     private final NotificationService notificationService;
 
-    @PostMapping
+    @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public void sendMessage(@RequestBody Notification notification){
+      //  log.info("Received notification request at /notification/ endpoint");
+     //   log.info("Notification details: {}", notification);
         notificationService.sendMessage(notification);
     }
 }

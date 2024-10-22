@@ -48,8 +48,8 @@ public class EmployeeService implements IEmployeeService{
                         .message("Employee Created")
                         .sender("Tom")
                         .build();
-        //die sturen naar notificationservice
-        notificationClient.sendNotification(notificationRequest);
+//        //die sturen naar notificationservice
+       notificationClient.sendNotification(notificationRequest);
 
     }
 
